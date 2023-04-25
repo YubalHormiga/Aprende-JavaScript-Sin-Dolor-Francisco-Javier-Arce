@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Condicionales Operadores Lógicos</title>
+	<meta charset="utf-8">
+	<script>
+		var dinero = false;
+		var auto = false;
+		var amiga = "Martha";
+		if (dinero || auto || amiga=="Lola") {
+			alert("Voy al teatro");
+		} else if(!dinero && auto && amiga=="Lola"){
+			alert("Voy al cine");
+		} else if(!dinero && !auto && amiga=="Lola"){
+			alert("Me quedo en la casa");
+		} else if(!dinero && !auto && amiga=="Martha"){
+			alert("Vemos televisión en la casa");
+		} else if(!dinero && auto && amiga=="Martha"){
+			alert("Ir al futbol");
+		} else if(dinero && auto && amiga=="Martha"){
+			alert("Vamos a la Opera");
+		} else {
+			alert("Me quedo en casa");
+		}
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>

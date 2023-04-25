@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Condicionales Switch</title>
+	<meta charset="utf-8">
+	<script>
+		var estadoCivil = prompt("¿Cuál es tu estado civil?");
+		var mensaje = "Lo invitamos a un viaje a Chiapas ";
+		var mensaje2="";
+		switch(estadoCivil){
+			case "soltero":
+			case "soltera":
+				mensaje2 = "donde podrás conocer a más personas solteras ";
+				break;
+			case "casado":
+			case "casada":
+				mensaje2 = "donde podrás disfrutar de la familia ";
+				break;
+			case "divorciado":
+			case "divorciada":
+			case "separado":
+			case "separada":
+				mensaje2 = "donde podrás olvidar tus penas ";
+				break;
+			case "viudo":
+			case "viuda":
+			case "abandonado":
+			case "abandonada":
+				mensaje2 = "donde podrás recordar tus mejores tiempos ";
+				break;
+			case "arrejuntado":
+			case "arrejuntada":
+				mensaje2 = "donde podrás tomar esa importante decisión ";
+				break;
+			default:
+				mensaje2 = "donde podrás definir tu situación personal ";
+		}
+		mensaje3 = " en una extraordinaria experiencia en la naturaleza";
+		document.write(mensaje+mensaje2+mensaje3);
+	</script>
+</head>
+<body>
+
+</body>
+</html>
