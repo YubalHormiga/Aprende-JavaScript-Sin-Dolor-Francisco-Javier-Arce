@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Omision o Default</title>
+</head>
+
+<body>
+    <script>
+
+        function antesECMA2015(a, b) {
+            b = typeof b !== 'undefined' ? b : 1
+            return a * b
+        }
+        console.log(antesECMA2015(5))
+        console.log(antesECMA2015(5, 2))
+        
+        function deespuestECMA2015(a, b = 1) {
+            return a * b
+        }
+        console.log(deespuestECMA2015(5))
+        console.log(deespuestECMA2015(5, 2))
+    </script>
+</body>
+
+</html>

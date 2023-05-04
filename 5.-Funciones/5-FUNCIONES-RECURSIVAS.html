@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funciones Recursivas</title>
+</head>
+
+<body>
+    <script>
+
+     
+        function factorial(n) {
+
+            // //Criterio de finalización
+            if ((n === 0) || (n === 1)) {
+                return 1
+            } else {
+                return (n * factorial(n - 1))
+            }
+        }
+        console.log(5, factorial(5))
+        console.log(4, factorial(4))
+        console.log(9, factorial(9))
+
+        //*OTRA FORMA DE CALCULAR FACTORIAL
+        let fact = 1;
+
+        // Iterar del 1 al 5 y multiplicar el fact por cada número
+        for (let i = 1; i <= 5; i++) {
+            fact *= i;
+        }
+
+        // Mostrar el resultado en la consola
+        console.log(fact); // Salida: 120
+
+        ///OTRO MÁS
+        function factorial(n) {
+            let i = 1
+            let factorial = 1
+            while (i <= n) {
+                factorial*=i
+                i++
+            }
+            return factorial
+        }
+
+        // Llamar a la función factorial con el número 5
+        console.log(factorial(5)); // Salida: 120
+
+    </script>
+</body>
+
+</html>

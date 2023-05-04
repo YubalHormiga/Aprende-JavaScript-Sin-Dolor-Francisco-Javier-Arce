@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrada y salidas del factorial</title>
+</head>
+
+<body>
+
+    <label for="numero">Introduzca entero positivo menor a 100:</label>
+    <input type="text" name="numero" id="numero">
+    <button type="button" id="calcular">Genera factorial</button>
+    <p id="salida"></p>
+
+
+    <script>
+        window.onload = function () {
+            document.getElementById('calcular').addEventListener('click', function () {
+                let n = document.getElementById('numero').value
+                n = Math.abs(parseInt(n))
+                if (isNaN(n) || n > 100) {
+                    return
+                }
+                let f = factorial(n)
+                salida = n.toString() + '!=' + f
+                document.getElementById('salida').innerHTML = salida
+            })
+        }
+
+        function factorial(n) {
+
+            // //Criterio de finalización
+            if ((n === 0) || (n === 1)) {
+                return 1
+            } else {
+                return (n * factorial(n - 1))
+            }
+        }
+
+
+
+
+    </script>
+</body>
+
+</html>
