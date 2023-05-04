@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Do While</title>
+</head>
+
+<body>
+    <script>
+        var i = 8
+        do {
+            document.write(i + '<br>')
+            i++
+        } while (i <= 13);
+        document.write('Salida:' + i + '<br>')
+
+        var clave = ''
+        var oportunidades = 0
+
+        do {
+            clave = prompt('Dame tu clave')
+            if (clave === '007') {
+                document.write('Bienvenido')
+                break
+            }
+            if (oportunidades > 3) {
+                alert('Ya no tienes más posibilidades')
+                break
+            }
+            oportunidades++
+        } while (clave !== '007');
+    </script>
+</body>
+
+</html>

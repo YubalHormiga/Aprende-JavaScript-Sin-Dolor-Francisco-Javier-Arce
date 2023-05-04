@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Break y Continue</title>
+</head>
+
+<body>
+    <script>
+        //Cotinue
+        for (let i = 0; i < 10; i++) {
+
+            if (i % 2 === 0) {
+                continue
+            }
+            document.write('El valor de la i es:'+ i +' impar' + '<br>')
+        }
+
+        //break 
+        var numero = 0
+        var intentos = 1
+        var magico = 7
+
+        while (numero !== magico) {
+            numero = prompt('Adivina el número entre 0 y 10 ', 'intento' + intentos + ' de 3')
+            if (numero == magico) {
+                alert('Acertates el numero mágico era el  ' + magico)
+                break
+            }
+            //incrementos
+            intentos++
+            if (intentos == 4) {
+                alert('Lo siento no tienes más posibilidades')
+                break
+            }
+        }
+
+
+
+    </script>
+</body>
+
+</html>
