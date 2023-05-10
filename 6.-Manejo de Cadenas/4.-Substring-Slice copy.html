@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadenas slice() substring()</title>
+
+    <script>
+
+        let correo1 = 'yubal@yahoo.es'
+        let correo2 = 'yubal@yahoo.es'
+        let posicion = correo2.indexOf('@')
+        let punto = correo2.indexOf('.', posicion + 1)
+        console.log(posicion)
+        console.log(punto)
+        if (correo1.length <= 10) {
+            document.write(`La longitud de la cadena es muy corta ${correo1.length}`)
+        } else if (posicion == -1) {
+            document.write('No tiene la @')
+        } else if (punto == -1) {
+            document.write('el correo debe tener al menos un punto')
+        } else if (!(correo1.toLocaleLowerCase() === correo2.toLocaleLowerCase())) {
+            document.write('Las claves no coinciden')
+        } else {
+            servicio = correo2.slice(posicion + 1)
+            usuario = correo2.substring(0, posicion).toLocaleLowerCase()
+            document.write('Tu servicio de correo es:' + servicio + '</br>')
+            document.write('Tu usuario de correo es: ' + usuario + '</br>')
+            document.write('Las claves coinciden')
+        }
+
+
+
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

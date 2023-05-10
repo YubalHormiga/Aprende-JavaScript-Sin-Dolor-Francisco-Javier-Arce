@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>toUpperCase & toLowerCase</title>
+
+    <script>
+
+        let correo1 = 'yubal@yahoo.essssssssssssssssssssssss'
+        let correo2 = 'Yubal@yahoo.essssssssssssssssssssssss'
+
+        if (correo1.length <= 20) {
+            document.write(`La longitud de la cadena es muy corta ${correo1.length}`)
+        } else {
+            if (correo1.toLocaleLowerCase() === correo2.toLocaleLowerCase()) {
+                document.write('Las claves coinciden')
+            } else {
+                document.write('Las claves no coinciden')
+            }
+        }
+
+
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

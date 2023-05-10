@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trim | Concat | Split</title>
+</head>
+<body>
+    <script>
+
+        var ciudad = 'Ciudad de Mexico   '
+        
+        document.write('Longitud de la cadena :'+ ciudad.length+ '<br>')
+        document.write('Longitud de la cadena :'+ ciudad.trim().length)
+        
+        var adjetivo = 'es maravillosa'
+        document.write(ciudad.concat(adjetivo)+ '<br>')
+
+        var nombre = 'Hugo , Paco, Luis'
+        var nombre_array = nombre.split(',')
+        for (let i = 0; i < nombre_array.length; i++) {
+            const element = nombre_array[i];
+            document.write(element+'<br>')
+            console.log(element)
+        }
+        console.log(nombre_array)
+        </script>
+</body>
+</html>
